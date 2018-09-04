@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="userInfo-owner">
+        <image class="userInfo-avatar" src="{{userInfo.avatar_large}}"></image>
+        <view class='userInfo-title'>
+           <text class='userInfo-username'>{{userInfo.username}}</text>
+           <text class="userInfo-created">加入于 {{userInfo.created}}</text>
+        </view>
+    </view>
+</view>

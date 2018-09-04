@@ -1,0 +1,15 @@
+<scroll-view class='scroll-view' scroll-y='true'>
+  <navigator wx:for='{{topics}}' wx:key='topics'  url='../detail/detail?id={{item.id}}'>
+    <view class='topic-view'> 
+      <image class='icon' src='{{item.member.avatar_large}}' bindtap='showUserAction' id='{{item.member.username}}'></image>
+      <view class='item'>
+        <text class='title'>{{item.title}}</text>
+        <text class='node'>{{item.node.title}}</text>
+        <text class='username' bindtap='showUserAction' id='{{item.member.username}}'>{{item.member.username}}</text>
+      </view>
+      <view class='repliesNum'>
+        <text>{{item.replies}}</text>
+      </view>
+  </view>
+  </navigator>
+</scroll-view>

@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="topic-detail">
+    <view class="topic-owner">
+        <image class="owner-avatar" src="{{detail.member.avatar_large}}" bindtap='showUserAction' id='{{detail.member.username}}'></image>
+        <view class="topic-tit">{{detail.title}}</view>
+    </view>
+    <view class="topic-info">
+        <text class='topic-username' bindtap='showUserAction' id='{{detail.member.username}}'>{{detail.member.username}}</text>
+        <text class="topic-created">{{detail.created}}</text>
+    </view>
+    <view class="topic-desc">
+        <text>{{detail.content}}</text>
+    </view>
+  </view>
+  <view class="replies">
+    <block wx:for="{{replies}}" wx:key='replies'>
+        <view class="replies-item">
+            <view class="reply-owner">
+                <image class="reply-avatar" src="{{item.member.avatar_large}}" bindtap='showUserAction' id='{{item.member.username}}'></image>
+                <text class="reply-name" bindtap='showUserAction' id='{{item.member.username}}'>{{item.member.username}}</text>
+                <text class="reply-time">{{item.created}}</text>
+            </view>
+            <view class="reply-content">
+                {{item.content}}
+            </view>
+        </view>
+    </block>
+  </view>
+</view>

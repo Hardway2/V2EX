@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/latest/latest",
+    "pages/hot/hot",
+    "pages/nodes/nodes",
+    "pages/detail/detail",
+    "pages/topics/topics",
+    "pages/members/members"
+  ],
+
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "V2EX",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/latest/latest",
+      "text": "最新",
+      "iconPath": "images/latest.png",
+      "selectedIconPath": "images/latest_on.png"
+    },
+    {
+      "pagePath": "pages/hot/hot",
+      "text": "最热",
+      "iconPath": "images/hot.png",
+      "selectedIconPath": "images/hot_on.png"
+    },
+    {
+      "pagePath": "pages/nodes/nodes",
+      "text": "节点",
+      "iconPath": "images/nodes.png",
+      "selectedIconPath": "images/nodes_on.png"
+    }
+    ]
+  }
+
+}

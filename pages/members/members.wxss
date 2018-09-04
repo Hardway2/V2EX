@@ -1,0 +1,31 @@
+.container {
+    padding:30rpx;
+}
+
+.userInfo-owner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30rpx;
+}
+
+.userInfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 30rpx;
+  border-radius: 100%;
+}
+
+.userInfo-title{
+    flex: 1;
+}
+
+.userInfo-username{
+    font-size:13px;
+    display: block;
+}
+
+.userInfo-created {
+    font-size:14px;
+    color:#999;
+}
+

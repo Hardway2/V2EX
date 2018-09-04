@@ -1,0 +1,5 @@
+<view class='topic-title-view' wx:for='{{topics}}' wx:key='topics'>
+  <navigator url='../topics/topics?id={{item.id}}'>
+    <text class='topic-title'>{{item.title}}</text>
+  </navigator>
+</view>
